@@ -51,7 +51,7 @@ let PAYE;
 function Salary(salary, benefits){
     let gross = salary + benefits;
     let NSSF = gross * 0.06;
-    // let netCalculator = gross;
+    // let net_calculator = gross;
 if (gross <= 24000) {
         PAYE = (gross*0.1)
     }
