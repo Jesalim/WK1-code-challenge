@@ -105,5 +105,5 @@ console.log('Gross salary:', gross)
     return netSalary;
 }
 }
-        console.log(salCalc(100000, 5000));
+        console.log(Salary(100000, 5000));
 
