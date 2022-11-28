@@ -4,16 +4,16 @@
 function grade_generator(grade){
 
     if (grade >= 80 && grade <= 100){
-        console.log("A")
+        return("A")
 
     }else if (grade >= 60 && grade<=79){
-        console.log("B")
+        return("B")
 
     }else if (grade >= 49 && grade <=59){
-        console.log("C")
+        return("C")
 
     }else if (grade < 40){
-        console.log("E")
+        return("E")
     }
     else
 
@@ -29,11 +29,11 @@ console.log(grade_generator(100))
 
 function speed_detector(speed){
     if (speed <= 70){
-        console.log("ok")
+        return("ok")
     }else{
         let points = (speed - 70) / 5
         if (points >= 12){
-            console.log("License suspended")
+            return("License suspended")
         }else{
             console.log("Points: " + points)
         }
@@ -98,12 +98,12 @@ console.log('Gross salary:', gross)
         else if (gross > 90000 && gross <= 99999) {
             NHIF = (1600) }
         else if (gross >= 100000) {
-            NHIF = (1700)
+            NHIF = (1700)}
     console.log('NHIF deduction:', NHIF)
     console.log('Taxes: PAYE + Nssf + Nhif :', (NSSF + PAYE + NHIF ))
     let netSalary = 'Net Salary:  ' + (gross - (NSSF + PAYE + NHIF ))
     return netSalary;
+
 }
-}
-        console.log(Salary(100000, 5000));
+        console.log(Salary(5000, 5000));
 
