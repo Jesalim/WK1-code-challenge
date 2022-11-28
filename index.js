@@ -48,7 +48,7 @@ let benefits;
 let NHIF;
 let NSSF;
 let PAYE;
-function salCalc(salary, benefits){
+function Salary(salary, benefits){
     let gross = salary + benefits;
     let NSSF = gross * 0.06;
     // let netCalculator = gross;
@@ -100,7 +100,7 @@ console.log('Gross salary:', gross)
         else if (gross >= 100000) {
             NHIF = (1700)
     console.log('NHIF deduction:', NHIF)
-    console.log('Taxes: PAYE + NSSF + NHIF :', (NSSF + PAYE + NHIF ))
+    console.log('Taxes: PAYE + Nssf + Nhif :', (NSSF + PAYE + NHIF ))
     let netSalary = 'Net Salary:  ' + (gross - (NSSF + PAYE + NHIF ))
     return netSalary;
 }
